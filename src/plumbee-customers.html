@@ -12,8 +12,8 @@
     theme: {
       extend: {
         colors: {
-          primary: '#8e4585',
-          'primary-light': '#f4e9f2', // Optional light shade
+          primary: '#0A2C6D',
+          'primary-light': '#F2F4FF', // Optional light shade
         }
       }
     }
@@ -62,12 +62,12 @@
 
 <body class="bg-white text-gray-900">
 
-   <!-- Header -->
-  <header class="flex justify-between items-center p-6 shadow-sm bg-white z-10 sticky top-0">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 shadow-sm bg-primary z-10 sticky top-0">
     <div class="flex items-center space-x-3">
       <img src="./images/plumsoft-logo-orig.svg" alt="Plumsoft Logo" class="w-52 h-auto" />
     </div>
-    <nav class="hidden md:flex space-x-6 font-semibold text-primary text-sm">
+    <nav class="hidden md:flex space-x-6 font-semibold text-white text-sm">
        <a href="./plumsoft-index-new-v3.html">Home</a>
      <a href="./plumbee-platform.html">Platform</a>
 <!-- Solutions Dropdown -->
@@ -81,6 +81,7 @@
   </div>     <a href="./plumbee-customers.html">Customers</a>
       <a href="#">Resources</a>
      <a href="./plumsoft-contact.html">Contact</a>
+	   <a href="./plumsoft-about.html">About Us</a>
     </nav>
     <div class="hidden md:block">
       <a href="#" onclick="toggleDemoModal(true)" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary">

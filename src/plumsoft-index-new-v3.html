@@ -12,8 +12,8 @@
     theme: {
       extend: {
         colors: {
-          primary: '#8e4585',
-          'primary-light': '#f4e9f2', // Optional light shade
+          primary: '#0A2C6D',
+          'primary-light': '#F2F4FF', // Optional light shade
         }
       }
     }
@@ -63,24 +63,26 @@
 <body class="bg-white text-gray-900">
 
   <!-- Header -->
-  <header class="flex justify-between items-center p-6 shadow-sm bg-white z-10 sticky top-0">
+  <header class="flex justify-between items-center p-6 shadow-sm bg-primary z-10 sticky top-0">
     <div class="flex items-center space-x-3">
       <img src="./images/plumsoft-logo-orig.svg" alt="Plumsoft Logo" class="w-52 h-auto" />
     </div>
-    <nav class="hidden md:flex space-x-6 font-semibold text-primary text-sm">
+    <nav class="hidden md:flex space-x-6 font-semibold text-white text-sm">
        <a href="./plumsoft-index-new-v3.html">Home</a>
      <a href="./plumbee-platform.html">Platform</a>
 <!-- Solutions Dropdown -->
   <div class="relative group">
     <a href="./plumbee-solutions.html" class="peer cursor-pointer">Solutions</a>
-    <div class="absolute top-full left-0 mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-white border rounded-md shadow-lg w-40 z-20">
+    <div class="absolute top-full left-0 mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-primary text-white border rounded-md shadow-lg w-40 z-20">
       <a href="./plumbee-erp.html" class="px-4 py-2 hover:bg-primary-light text-sm">ERP</a>
       <a href="./plumbee-edtech.html" class="px-4 py-2 hover:bg-primary-light text-sm">Ed Tech</a>
       <a href="./plumbee-crm.html" class="px-4 py-2 hover:bg-primary-light text-sm">CRM</a>
     </div>
-  </div>     <a href="./plumbee-customers.html">Customers</a>
+  </div>     
+  <a href="./plumbee-customers.html">Customers</a>
       <a href="#">Resources</a>
      <a href="./plumsoft-contact.html">Contact</a>
+	   <a href="./plumsoft-about.html">About Us</a>
     </nav>
     <div class="hidden md:block">
       <a href="#" onclick="toggleDemoModal(true)" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary">
@@ -118,7 +120,7 @@
   <div class="md:w-1/2 mt-12 md:mt-0 fade-in-up flex justify-center">
     <img src="./images/plum-home1.png"
          alt="No Code Platform"
-         class="w-full max-w-2xl h-auto rounded-xl shadow-md" />
+         class="w-full max-w-2xl h-auto rounded-xl" />
   </div>
 </div>
 
@@ -147,7 +149,7 @@
   <div class="md:w-1/2 mt-12 md:mt-0 fade-in-up flex justify-center">
     <img src="./images/plum-home-nocode2.png"
          alt="No Code Platform"
-         class="w-full max-w-2xl h-auto rounded-xl shadow-md" />
+         class="w-full max-w-2xl h-auto rounded-xl " />
   </div>
 </div>
 

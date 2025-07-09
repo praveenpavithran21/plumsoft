@@ -71,14 +71,17 @@
        <a href="./plumsoft-index-new-v3.html">Home</a>
      <a href="./plumbee-platform.html">Platform</a>
 <!-- Solutions Dropdown -->
-  <div class="relative group">
-    <a href="./plumbee-solutions.html" class="peer cursor-pointer">Solutions</a>
-    <div class="absolute top-full left-0 mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-primary text-white border rounded-md shadow-lg w-40 z-20">
-      <a href="./plumbee-erp.html" class="px-4 py-2 hover:bg-primary-light text-sm">ERP</a>
-      <a href="./plumbee-edtech.html" class="px-4 py-2 hover:bg-primary-light text-sm">Ed Tech</a>
-      <a href="./plumbee-crm.html" class="px-4 py-2 hover:bg-primary-light text-sm">CRM</a>
-    </div>
-  </div>     
+<div class="relative group">
+  <button class="peer cursor-pointer focus:outline-none text-white">Solutions</button>
+  
+  <div class="absolute top-full left-0 mt-2 hidden peer-focus:flex group-hover:flex flex-col bg-primary text-white border rounded-md shadow-lg w-40 z-20">
+    <a href="./plumbee-solutions.html" class="px-4 py-2 hover:bg-primary-light text-sm hover:text-black">All Solutions</a>
+	<a href="./plumbee-erp.html" class="px-4 py-2 hover:bg-primary-light text-sm hover:text-black">ERP</a>
+    <a href="./plumbee-edtech.html" class="px-4 py-2 hover:bg-primary-light text-sm hover:text-black">Ed Tech</a>
+    <a href="./plumbee-crm.html" class="px-4 py-2 hover:bg-primary-light text-sm hover:text-black">CRM</a>
+  </div>
+</div>
+   
   <a href="./plumbee-customers.html">Customers</a>
       <a href="#">Resources</a>
      <a href="./plumsoft-contact.html">Contact</a>
@@ -221,7 +224,11 @@
     });
   }, 10000); // 10 seconds
 </script>
-
+<!-- Footer -->
+  <footer class="bg-purple-100 text-center py-8 text-primary text-sm">
+    &copy; 2025 Plumsoft. All rights reserved.
+  </footer>
+  
 <!-- Demo Request Modal -->
 <div id="demoModal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden justify-center items-center px-4">
   <div class="flex flex-col md:flex-row w-full max-w-4xl rounded-xl shadow-lg overflow-hidden text-white">

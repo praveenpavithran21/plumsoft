@@ -72,14 +72,17 @@
        <a href="./plumsoft-index-new-v3.html">Home</a>
      <a href="./plumbee-platform.html">Platform</a>
 <!-- Solutions Dropdown -->
-  <div class="relative group">
-    <a href="./plumbee-solutions.html" class="peer cursor-pointer">Solutions</a>
-    <div class="absolute top-full left-0 mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-white border rounded-md shadow-lg w-40 z-20">
-      <a href="./plumbee-erp.html" class="px-4 py-2 hover:bg-primary-light text-sm">ERP</a>
-      <a href="./plumbee-edtech.html" class="px-4 py-2 hover:bg-primary-light text-sm">Ed Tech</a>
-      <a href="./plumbee-crm.html" class="px-4 py-2 hover:bg-primary-light text-sm">CRM</a>
-    </div>
-  </div>     <a href="./plumbee-customers.html">Customers</a>
+<div class="relative group">
+  <button class="peer cursor-pointer focus:outline-none text-white">Solutions</button>
+  
+  <div class="absolute top-full left-0 mt-2 hidden peer-focus:flex group-hover:flex flex-col bg-primary text-white border rounded-md shadow-lg w-40 z-20">
+    <a href="./plumbee-solutions.html" class="px-4 py-2 hover:bg-primary-light text-sm hover:text-black">All Solutions</a>
+	<a href="./plumbee-erp.html" class="px-4 py-2 hover:bg-primary-light text-sm hover:text-black">ERP</a>
+    <a href="./plumbee-edtech.html" class="px-4 py-2 hover:bg-primary-light text-sm hover:text-black">Ed Tech</a>
+    <a href="./plumbee-crm.html" class="px-4 py-2 hover:bg-primary-light text-sm hover:text-black">CRM</a>
+  </div>
+</div>
+ <a href="./plumbee-customers.html">Customers</a>
       <a href="#">Resources</a>
      <a href="./plumsoft-contact.html">Contact</a>
 	   <a href="./plumsoft-about.html">About Us</a>
@@ -91,36 +94,39 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-<section class="bg-gradient-to-r from-purple-100 to-white py-16 px-6 md:px-20 animate-fade-in-down">
-  <div class="flex flex-col md:flex-row items-center justify-between gap-10">
-    
-    <!-- Left: Heading and CTA -->
-    <div class="text-center md:text-left md:w-1/2">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-6">
-        Your Business, Streamlined by PlumCore
-      </h1>
-      <p class="text-lg md:text-xl text-gray-700 mb-6 max-w-xl">
-        PlumCore ERP</b> is an AI-powered all-in-one solution designed to automate and optimize your enterprise operations. Whether you're managing sales pipelines or tracking production on the floor, PlumCore adapts to your workflows, in a jiffy!
-      </p>
-      <div class="flex flex-col sm:flex-row sm:justify-start justify-center gap-4 mt-4">
-        <a href="#" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition">
-          Get a Live Demo
-        </a>
-        <a href="#" class="border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary transition">
-          Download Brochure
-        </a>
-      </div>
-    </div>
+<!-- Hero Carousel Section -->
+<section class="w-full overflow-hidden bg-gradient-to-br from-purple-50 to-white">
+  <div id="carousel" class="carousel">
+    <!-- Slide 1: No-Code Platform -->
+    <div class="carousel-slide py-20 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between">
+  <!-- Left: Heading -->
+  <div class="md:w-1/2 text-center md:text-left fade-in-up">
+    <h1 class="text-5xl font-extrabold leading-tight text-primary mb-6">
+      Your Business, Sreamlined. <br />
+    </h1>
+    <p class="text-lg text-gray-600 mb-6">
+      <b text-primary>PlumCore ERP</b> is an AI-powered all-in-one solution designed to automate and optimize your enterprise operations. Whether you're managing sales pipelines or tracking production on the floor, PlumCore adapts to your workflows, in a jiffy!
+    </p>
+    <div class="flex justify-center md:justify-start space-x-4">
+      <a href="#" onclick="toggleDemoModal(true)" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary">
+  Get a Demo
+</a>
 
-    <!-- Right: Large Image -->
-    <div class="md:w-1/2">
-      <img src="./images/plumcore-erp.png" alt="EdTech Illustration" class="w-full max-w-xl mx-auto rounded-xl shadow-md" />
+      <a href="./plumbee-erp.html" class="text-primary font-semibold border-b-2 border-primary hover:border-primary">
+        Learn More
+      </a>
     </div>
-    
   </div>
-</section>
 
+  <!-- Right: Enlarged Image -->
+  <div class="md:w-1/2 mt-12 md:mt-0 fade-in-up flex justify-center">
+    <img src="./images/plumcore-erp.png"
+         alt="No Code Platform"
+         class="w-full max-w-2xl h-auto rounded-xl" />
+  </div>
+</div>
+   
+</section>
 
   
  <section class="py-16 px-6 md:px-20 bg-purple-50">
@@ -323,6 +329,12 @@
 
     </div>
   </section>
+  
+  <!-- Footer -->
+  <footer class="bg-purple-100 text-center py-8 text-primary text-sm">
+    &copy; 2025 Plumsoft. All rights reserved.
+  </footer>
+  
 <!-- Demo Request Modal -->
 <div id="demoModal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden justify-center items-center px-4">
   <div class="flex flex-col md:flex-row w-full max-w-4xl rounded-xl shadow-lg overflow-hidden text-white">

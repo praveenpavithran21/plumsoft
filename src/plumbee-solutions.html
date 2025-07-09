@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlumBee Solutions | Plumsoft</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8e4585',
+            'primary-light': '#f4e9f2',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+<!-- Header -->
+  <header class="flex justify-between items-center p-6 shadow-sm bg-white z-10 sticky top-0">
+    <div class="flex items-center space-x-3">
+      <img src="./images/plumsoft-logo-orig.svg" alt="Plumsoft Logo" class="w-52 h-auto" />
+    </div>
+    <nav class="hidden md:flex space-x-6 font-semibold text-primary text-sm">
+       <a href="./plumsoft-index-new-v3.html">Home</a>
+     <a href="./plumbee-platform.html">Platform</a>
+<!-- Solutions Dropdown -->
+  <div class="relative group">
+    <a href="./plumbee-solutions.html" class="peer cursor-pointer">Solutions</a>
+    <div class="absolute top-full left-0 mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-white border rounded-md shadow-lg w-40 z-20">
+      <a href="./plumbee-erp.html" class="px-4 py-2 hover:bg-primary-light text-sm">ERP</a>
+      <a href="./plumbee-edtech.html" class="px-4 py-2 hover:bg-primary-light text-sm">Ed Tech</a>
+      <a href="./plumbee-crm.html" class="px-4 py-2 hover:bg-primary-light text-sm">CRM</a>
+    </div>
+  </div>     <a href="./plumbee-customers.html">Customers</a>
+      <a href="#">Resources</a>
+     <a href="./plumsoft-contact.html">Contact</a>
+    </nav>
+    <div class="hidden md:block">
+      <a href="#" onclick="toggleDemoModal(true)" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary">
+        Get a Demo
+      </a>
+    </div>
+  </header>
+  
+  
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-purple-50 to-white py-16 px-6 md:px-20 animate-fade-in-down">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+    
+    <!-- Left: Heading and CTA -->
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-6">
+        Discover the PlumBee Solution Suite
+      </h1>
+      <p class="text-lg md:text-xl text-gray-700 mb-6 max-w-xl">
+        From core enterprise systems to focused business functions—our PlumBee solutions help you automate, optimize, and grow faster.
+      </p>
+      <div class="flex flex-col sm:flex-row sm:justify-start justify-center gap-4 mt-4">
+        <a href="#" onclick="toggleDemoModal(true)" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition">
+          Get a Live Demo
+        </a>
+        <a href="#" class="border border-primary-light text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary-light transition">
+          Download Brochure
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Large Image -->
+    <div class="md:w-1/2">
+      <img src="./images/plum-industries.png" alt="Our Solutions" class="w-full max-w-xl mx-auto rounded-xl shadow-md" />
+    </div>
+    
+  </div>
+</section>
+
+<!-- Solutions Grid -->
+<section class="py-16 px-6 md:px-20 bg-white">
+  <div class="grid md:grid-cols-3 gap-10 text-center">
+    <a href="./plumbee-erp.html" class="block">
+	<div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:bg-primary shadow-lg hover:text-white">
+      <i class="ph ph-building text-4xl mb-4 "></i>
+      <h2 class="text-xl font-bold mb-2">PlumCore ERP</h2>
+      <p>All-in-one ERP system for streamlined operations and real-time control.</p>
+    </div>
+	</a>
+    <div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:shadow-lg hover:bg-primary hover:text-white">
+      <i class="ph ph-users-three text-4xl mb-4"></i>
+      <h2 class="text-xl font-bold mb-2">PlumCare CRM</h2>
+      <p>Customer lifecycle management with integrated communication tools.</p>
+    </div>
+     <a href="./plumbee-edtech.html" class="block">
+	 <div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:shadow-lg hover:bg-primary hover:text-white">
+      <i class="ph ph-graduation-cap text-4xl mb-4"></i>
+      <h2 class="text-xl font-bold mb-2">PlumLearn</h2>
+      <p>AI Driven Smart Education Platform enriching the learning experience for students and mentors.</p>
+    </div>
+	</a>
+    <div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:shadow-lg hover:bg-primary hover:text-white">
+      <i class="ph ph-identification-card text-4xl mb-4"></i>
+      <h2 class="text-xl font-bold mb-2">PlumPeople</h2>
+      <p>End-to-end human capital management from hiring to retirement.</p>
+    </div>
+    <div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:shadow-lg hover:bg-primary hover:text-white">
+      <i class="ph ph-shopping-cart-simple text-4xl mb-4"></i>
+      <h2 class="text-xl font-bold mb-2">PlumBuy</h2>
+      <p>Smart procurement with vendor portals, approvals, and spend tracking.</p>
+    </div>
+    <div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:shadow-lg hover:bg-primary hover:text-white">
+      <i class="ph ph-gear-six text-4xl mb-4"></i>
+      <h2 class="text-xl font-bold mb-2">PlumPlant</h2>
+      <p>Automate plant maintenance with checklists, breakdown tracking, and alerts.</p>
+    </div>
+    <div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:shadow-lg hover:bg-primary hover:text-white">
+      <i class="ph ph-handshake text-4xl mb-4"></i>
+      <h2 class="text-xl font-bold mb-2">PlumSales</h2>
+      <p>Drive revenue with territory mapping, sales pipelines, and order tracking.</p>
+    </div>
+    <div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:shadow-lg hover:bg-primary hover:text-white">
+      <i class="ph ph-chart-bar text-4xl mb-4"></i>
+      <h2 class="text-xl font-bold mb-2">PlumData</h2>
+      <p>Smart analytics and BI dashboards with real-time insights and interactive reports.</p>
+    </div>
+	 <div class="bg-primary-light p-6 rounded-xl shadow text-primary hover:shadow-lg hover:bg-primary hover:text-white">
+      <i class="ph ph-factory text-4xl mb-4"></i>
+      <h2 class="text-xl font-bold mb-2">PlumProd</h2>
+      <p>Plan, schedule, and monitor production seamlessly with drag-and-drop tools.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 px-6 md:px-20 bg-primary text-center">
+  <h2 class="text-3xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
+  <p class="text-white text-white-700 max-w-3xl mx-auto mb-10">
+    Let our team show you how PlumBee can fit your exact business goals with custom workflows and industry-ready templates.
+  </p>
+  <div>
+    <a href="#" onclick="toggleDemoModal(true)" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-white transition">
+      Request a Demo
+    </a>
+  </div>
+</section>
+
+<!-- Demo Request Modal -->
+<div id="demoModal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden justify-center items-center px-4">
+  <div class="flex flex-col md:flex-row w-full max-w-4xl rounded-xl shadow-lg overflow-hidden text-white">
+
+    <!-- Left: Image area with same gradient background -->
+    <div class="hidden md:flex md:w-1/2 items-center justify-center bg-primary">
+      <img src="./images/plum-demo.png" alt="Demo" class="max-w-[80%] h-auto" />
+    </div>
+
+    <!-- Right: Form with gradient -->
+    <div class="w-full md:w-1/2 p-8 relative bg-primary">
+      <button onclick="toggleDemoModal(false)" class="absolute top-4 right-4 text-white text-xl hover:text-white">&times;</button>
+      <h2 class="text-2xl font-bold mb-6 text-center">💻 Schedule Your Demo</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name"
+               class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+        <input type="email" placeholder="Email Address"
+               class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+        <input type="text" placeholder="Company Name"
+               class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+        <input type="tel" placeholder="Mobile Number"
+               class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+        <textarea placeholder="Purpose of Demo" rows="3"
+                  class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+        <div class="flex justify-end space-x-4 pt-4">
+          <button type="submit" class="bg-white text-primary px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition">Request Demo</button>
+          <button type="button" onclick="toggleDemoModal(false)"
+                  class="bg-white text-primary px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function toggleDemoModal(show) {
+    const modal = document.getElementById('demoModal');
+    modal.classList.toggle('hidden', !show);
+    modal.classList.toggle('flex', show);
+  }
+</script>
+
+</body>
+</html>

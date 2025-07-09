@@ -1,0 +1,4 @@
+plumsoft website prompts:
+
+
+great - lets now design and write code for a new html page for the no code platform called plum bee - this page should open when I click on the platform link on homepage. Use this page as reference for the template. Use purple color theme instead of orange of whatfix--> https://whatfix.com/products/digital-adoption-platform/ 

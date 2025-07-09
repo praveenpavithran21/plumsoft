@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Plumsoft – No Code Enterprise Platform</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#8e4585',
+          'primary-light': '#f4e9f2', // Optional light shade
+        }
+      }
+    }
+  }
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Hero Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out both;
+    }
+
+    /* Carousel Styles */
+    .carousel {
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      display: flex;
+      overflow-x: auto;
+      width: 100%;
+    }
+
+    .carousel-slide {
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      width: 100%;
+      min-width: 100%;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 shadow-sm bg-white z-10 sticky top-0">
+    <div class="flex items-center space-x-3">
+      <img src="./images/plumsoft-logo-orig.svg" alt="Plumsoft Logo" class="w-52 h-auto" />
+    </div>
+    <nav class="hidden md:flex space-x-6 font-semibold text-primary text-sm">
+       <a href="./plumsoft-index-new-v3.html">Home</a>
+     <a href="./plumbee-platform.html">Platform</a>
+<!-- Solutions Dropdown -->
+  <div class="relative group">
+    <a href="./plumbee-solutions.html" class="peer cursor-pointer">Solutions</a>
+    <div class="absolute top-full left-0 mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-white border rounded-md shadow-lg w-40 z-20">
+      <a href="./plumbee-erp.html" class="px-4 py-2 hover:bg-primary-light text-sm">ERP</a>
+      <a href="./plumbee-edtech.html" class="px-4 py-2 hover:bg-primary-light text-sm">Ed Tech</a>
+      <a href="./plumbee-crm.html" class="px-4 py-2 hover:bg-primary-light text-sm">CRM</a>
+    </div>
+  </div>     <a href="./plumbee-customers.html">Customers</a>
+      <a href="#">Resources</a>
+     <a href="./plumsoft-contact.html">Contact</a>
+    </nav>
+    <div class="hidden md:block">
+      <a href="#" onclick="toggleDemoModal(true)" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary">
+        Get a Demo
+      </a>
+    </div>
+  </header>
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-purple-50 to-white py-16 px-6 md:px-20 animate-fade-in-down">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+    
+    <!-- Left: Heading and CTA -->
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-6">
+        Plumbee – Our Revolutionary No-Code Platform
+      </h1>
+      <p class="text-lg md:text-xl text-gray-700 mb-6 max-w-xl">
+        Build modern enterprise applications visually—with zero code. Collaborate, configure, and deploy with lightning speed. Say goodbye to months-long dev cycles.
+      </p>
+      <div class="flex flex-col sm:flex-row sm:justify-start justify-center gap-4 mt-4">
+        <a href="#" onclick="toggleDemoModal(true)" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition">
+          Get a Live Demo
+        </a>
+        <a href="#" class="border border-primary-light text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary-light transition">
+          Download Brochure
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Large Image -->
+    <div class="md:w-1/2">
+      <img src="./images/plum-home-nocode.png" alt="No Code Illustration" class="w-full max-w-xl mx-auto rounded-xl shadow-md" />
+    </div>
+    
+  </div>
+</section>
+
+    <!-- Platform Capabilities -->
+  <section class="py-16 px-6 md:px-20 bg-white">
+    <h2 class="text-3xl font-bold text-primary mb-12 text-center">Platform Capabilities</h2>
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <div class="flex items-start gap-4">
+        <i class="ph ph-sliders-horizontal text-3xl text-primary"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-1 text-black"><b>Easy Configuration</b></h3>
+          <p>Build apps with drag-and-drop ease. No coding. Just creativity.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <i class="ph ph-shield-check text-3xl text-primary"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-1 text-black"><b>Access Controls</b></h3>
+          <p>Enterprise-grade roles, profiles, and permissions keep data safe.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <i class="ph ph-chart-pie-slice text-3xl text-primary"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-1 text-black"><b>Dashboards</b></h3>
+          <p>Real-time metrics and trends visualized in customizable widgets.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <i class="ph ph-device-mobile text-3xl text-primary"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-1 text-black"><b>Mobile Ready</b></h3>
+          <p>Apps automatically adapt to mobile devices with native UX.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <i class="ph ph-flow-arrow text-3xl text-primary"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-1 text-black"><b>Workflow Automation</b></h3>
+          <p>Automate business logic in minutes using click-based designers.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <i class="ph ph-chart-bar text-3xl text-primary"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-1 text-black"><b>Reports & BI</b></h3>
+          <p>Build reports and dashboards with grouping, filtering, and charts.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <i class="ph ph-file-text text-3xl text-primary"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-1 text-black"><b>Document Management</b></h3>
+          <p>Store, share, and control access to files—securely and efficiently.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <i class="ph ph-database text-3xl text-primary"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-1 text-black"><b>Data Import/Export</b></h3>
+          <p>Move data via Excel, APIs, or integrations—effortlessly.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Business Benefits -->
+  <section class="py-16 px-6 md:px-20 bg-purple-50">
+    <h2 class="text-3xl font-bold text-primary mb-12 text-center"><b>Business Benefits</b></h2>
+    <div class="grid md:grid-cols-3 gap-10 text-center text-gray-800">
+
+      <div class="flex flex-col items-center">
+        <i class="ph ph-rocket text-3xl text-primary mb-2"></i>
+        <h3 class="text-xl font-semibold mb-1"><b>Faster Time to Market</b></h3>
+        <p>Deliver apps 5×–10× faster than traditional coding.</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="ph ph-currency-circle-dollar text-3xl text-primary mb-2"></i>
+        <h3 class="text-xl font-semibold mb-1"><b>Lower TCO</b></h3>
+        <p>Cloud-native and maintenance-free infrastructure.</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="ph ph-check-circle text-3xl text-primary mb-2"></i>
+        <h3 class="text-xl font-semibold mb-1"><b>Future-Ready</b></h3>
+        <p>Auto-upgrading apps evolve with the platform.</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="ph ph-cloud-check text-3xl text-primary mb-2"></i>
+        <h3 class="text-xl font-semibold mb-1"><b>Enterprise Quality</b></h3>
+        <p>Built for uptime, scale, and resilience.</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="ph ph-lock-key text-3xl text-primary mb-2"></i>
+        <h3 class="text-xl font-semibold mb-1"><b>Secure by Design</b></h3>
+        <p>Multi-layered security to protect your data.</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="ph ph-plug text-3xl text-primary mb-2"></i>
+        <h3 class="text-xl font-semibold mb-1"><b>Easy Integration</b></h3>
+        <p>Seamless APIs and connectors to external systems.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Application Types -->
+  <section class="py-16 px-6 md:px-20 bg-primary text-center">
+    <h2 class="text-3xl font-bold text-white mb-6">Build with Imagination. Deploy with Ease.</h2>
+    <p class="text-white text-white-700 max-w-3xl mx-auto mb-10">
+      Whether it’s a departmental tool or full enterprise suite, Plumbee has you covered.
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-white font-semibold text-lg">
+      <div class="flex items-center gap-2 justify-center">
+        <i class="ph ph-browser text-2xl"></i> Web Apps
+      </div>
+      <div class="flex items-center gap-2 justify-center">
+        <i class="ph ph-device-mobile text-2xl"></i> Mobile Apps
+      </div>
+      <div class="flex items-center gap-2 justify-center">
+        <i class="ph ph-buildings text-2xl"></i> Enterprise Apps
+      </div>
+      <div class="flex items-center gap-2 justify-center">
+        <i class="ph ph-network text-2xl"></i> Distributed Systems
+      </div>
+    </div>
+    <div class="mt-10">
+      <a href="#" onclick="toggleDemoModal(true)" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-white transition">
+        Request a Demo
+      </a>
+    </div>
+  </section>
+
+<!-- Demo Request Modal -->
+<div id="demoModal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden justify-center items-center">
+  <div class="bg-gradient-to-br from-primary via-[#a6649f] to-[#d3a9cc] text-white rounded-xl shadow-lg w-full max-w-lg p-8 relative">
+    <button onclick="toggleDemoModal(false)" class="absolute top-4 right-4 text-white text-xl hover:text-white">&times;</button>
+    <h2 class="text-2xl font-bold mb-4 text-center">💻 Schedule Your Personalized Demo</h2>
+
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name"
+             class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+      <input type="email" placeholder="Email Address"
+             class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+      <input type="text" placeholder="Company Name"
+             class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+      <input type="tel" placeholder="Mobile Number"
+             class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+      <textarea placeholder="Purpose of Demo" rows="3"
+                class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+      
+      <div class="flex justify-end space-x-4 pt-4">
+        <button type="submit" class="bg-white text-primary px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition">Request Demo</button>
+        <button type="button" onclick="toggleDemoModal(false)"
+                class="bg-white text-primary px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+  function toggleDemoModal(show) {
+    const modal = document.getElementById('demoModal');
+    modal.classList.toggle('hidden', !show);
+    modal.classList.toggle('flex', show);
+  }
+</script>

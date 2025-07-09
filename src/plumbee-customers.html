@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plumsoft – No Code Enterprise Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#8e4585',
+          'primary-light': '#f4e9f2', // Optional light shade
+        }
+      }
+    }
+  }
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Hero Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out both;
+    }
+
+    /* Carousel Styles */
+    .carousel {
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      display: flex;
+      overflow-x: auto;
+      width: 100%;
+    }
+
+    .carousel-slide {
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      width: 100%;
+      min-width: 100%;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+   <!-- Header -->
+  <header class="flex justify-between items-center p-6 shadow-sm bg-white z-10 sticky top-0">
+    <div class="flex items-center space-x-3">
+      <img src="./images/plumsoft-logo-orig.svg" alt="Plumsoft Logo" class="w-52 h-auto" />
+    </div>
+    <nav class="hidden md:flex space-x-6 font-semibold text-primary text-sm">
+       <a href="./plumsoft-index-new-v3.html">Home</a>
+     <a href="./plumbee-platform.html">Platform</a>
+<!-- Solutions Dropdown -->
+  <div class="relative group">
+    <a href="./plumbee-solutions.html" class="peer cursor-pointer">Solutions</a>
+    <div class="absolute top-full left-0 mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-white border rounded-md shadow-lg w-40 z-20">
+      <a href="./plumbee-erp.html" class="px-4 py-2 hover:bg-primary-light text-sm">ERP</a>
+      <a href="./plumbee-edtech.html" class="px-4 py-2 hover:bg-primary-light text-sm">Ed Tech</a>
+      <a href="./plumbee-crm.html" class="px-4 py-2 hover:bg-primary-light text-sm">CRM</a>
+    </div>
+  </div>     <a href="./plumbee-customers.html">Customers</a>
+      <a href="#">Resources</a>
+     <a href="./plumsoft-contact.html">Contact</a>
+    </nav>
+    <div class="hidden md:block">
+      <a href="#" onclick="toggleDemoModal(true)" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary">
+        Get a Demo
+      </a>
+    </div>
+  </header>
+ 
+<!-- Testimonials Carousel -->
+<section class="bg-purple-50 py-20 px-6 md:px-20 text-center">
+  <h2 class="text-3xl font-bold text-primary mb-12">What Our Clients Say</h2>
+
+  <div class="overflow-x-auto flex space-x-8 snap-x snap-mandatory scroll-smooth pb-4">
+    
+    <!-- Testimonial 1 -->
+    <div class="min-w-[300px] max-w-sm snap-center bg-white shadow-lg rounded-xl p-6 flex flex-col items-center">
+      <img src="./images/client-placeholder1.jpg" alt="Client 1" class="w-24 h-24 rounded-full mb-4 object-cover" />
+      <p class="text-lg text-gray-700 mb-4">“Plumbee helped us streamline workflows and reduce IT tickets by over 15% YoY across regions.”</p>
+      <p class="font-semibold text-purple-900">Phil Walley</p>
+      <p class="text-sm text-gray-600">Sales Ops Manager - XYZ Logistics, GA</p>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="min-w-[300px] max-w-sm snap-center bg-white shadow-lg rounded-xl p-6 flex flex-col items-center">
+      <img src="./images/client-placeholder2.jpg" alt="Client 2" class="w-24 h-24 rounded-full mb-4 object-cover" />
+      <p class="text-lg text-gray-700 mb-4">“We digitized student records and reduced admin time by 30% using PlumEd.”</p>
+      <p class="font-semibold text-purple-900">Dr. Neha Reddy</p>
+      <p class="text-sm text-gray-600">Registrar - National Institute of Design</p>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="min-w-[300px] max-w-sm snap-center bg-white shadow-lg rounded-xl p-6 flex flex-col items-center">
+      <img src="./images/client-placeholder3.jpg" alt="Client 3" class="w-24 h-24 rounded-full mb-4 object-cover" />
+      <p class="text-lg text-gray-700 mb-4">“We saw a 40% reduction in process cycle time thanks to PlumCore ERP.”</p>
+      <p class="font-semibold text-purple-900">Ankit Sharma</p>
+      <p class="text-sm text-gray-600">CIO - FutureTech Manufacturing</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Customer Grid Section -->
+   <!-- Client Trust Bar -->
+  <!-- Auto Scroll Script -->
+<section class="py-16 px-6 md:px-20 bg-white-50">
+  <h2 class="text-3xl font-bold text-primary mb-10 text-center">Trusted by Industry Leaders</h2>
+  <div class="overflow-hidden">
+    <div class="flex animate-scroll whitespace-nowrap space-x-12">
+      <img src="./images/itg-logo.gif" alt="India Today" class="h-16 w-auto inline-block" />
+      <img src="./images/thomsonpress.png" alt="Thomson Press" class="h-16 w-auto inline-block" />
+      <img src="./images/arvind.png" alt="Arvind" class="h-16 w-auto inline-block" />
+      <img src="./images/bharathiCement.png" alt="Bharti Cement" class="h-16 w-auto inline-block" />
+      <img src="./images/UnionBank_logo-new.png" alt="Union Bank" class="h-16 w-auto inline-block" />
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes scroll {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+</style>
+
+  <!-- Video Testimonial Section -->
+  <section class="bg-purple-50 py-20 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-primary text-center mb-12">Customer Stories</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <iframe class="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/placeholder1" title="Customer Story 1" frameborder="0" allowfullscreen></iframe>
+        <p class="mt-4 text-center font-semibold text-gray-800">Customer 1: Transforming operations with Plumbee</p>
+      </div>
+      <div>
+        <iframe class="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/placeholder2" title="Customer Story 2" frameborder="0" allowfullscreen></iframe>
+        <p class="mt-4 text-center font-semibold text-gray-800">Customer 2: Driving growth using no-code modules</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Use Cases Section -->
+  <section class="py-20 px-6 md:px-20 bg-white">
+    <h2 class="text-3xl font-bold text-primary text-center mb-12">Proven Across Industries</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-purple-100 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold text-primary mb-2">Manufacturing</h3>
+        <p class="text-sm text-gray-700">Automated production tracking and maintenance systems.</p>
+      </div>
+      <div class="bg-purple-100 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold text-primary mb-2">Education</h3>
+        <p class="text-sm text-gray-700">Custom LMS and digital records using Plumbee's drag-drop tools.</p>
+      </div>
+      <div class="bg-purple-100 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold text-primary mb-2">Pharma</h3>
+        <p class="text-sm text-gray-700">SOP compliance and audit workflows tailored to regulatory needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-primary text-white py-16 px-6 md:px-20 text-center">
+    <h2 class="text-3xl font-bold mb-4">Ready to Join the No-Code Revolution?</h2>
+    <p class="mb-6 text-lg">Talk to our experts and see how Plumbee can accelerate your business transformation.</p>
+    <a href="#" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-purple-100 transition">
+      Request a Demo
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-100 text-center py-8 text-primary text-sm">
+    &copy; 2025 Plumsoft. All rights reserved.
+  </footer>
+  
+<!-- Demo Request Modal -->
+<div id="demoModal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden justify-center items-center px-4">
+  <div class="flex flex-col md:flex-row w-full max-w-4xl rounded-xl shadow-lg overflow-hidden text-white">
+
+    <!-- Left: Image area with same gradient background -->
+    <div class="hidden md:flex md:w-1/2 items-center justify-center bg-primary">
+      <img src="./images/plum-demo.png" alt="Demo" class="max-w-[80%] h-auto" />
+    </div>
+
+    <!-- Right: Form with gradient -->
+    <div class="w-full md:w-1/2 p-8 relative bg-primary">
+      <button onclick="toggleDemoModal(false)" class="absolute top-4 right-4 text-white text-xl hover:text-white">&times;</button>
+      <h2 class="text-2xl font-bold mb-6 text-center">💻 Schedule Your Demo</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name"
+               class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+        <input type="email" placeholder="Email Address"
+               class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+        <input type="text" placeholder="Company Name"
+               class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+        <input type="tel" placeholder="Mobile Number"
+               class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white" />
+        <textarea placeholder="Purpose of Demo" rows="3"
+                  class="w-full px-4 py-2 border border-white bg-transparent text-white placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+        <div class="flex justify-end space-x-4 pt-4">
+          <button type="submit" class="bg-white text-primary px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition">Request Demo</button>
+          <button type="button" onclick="toggleDemoModal(false)"
+                  class="bg-white text-primary px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+  function toggleDemoModal(show) {
+    const modal = document.getElementById('demoModal');
+    modal.classList.toggle('hidden', !show);
+    modal.classList.toggle('flex', show);
+  }
+</script>
